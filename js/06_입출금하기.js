@@ -75,7 +75,7 @@ function withdrawal(){
   }
 
   if(pw === password){ // 입력받은 pw와 전역변수 password 불일치
-    alert("비밀번가 일치하지 않습니다");
+    alert("비밀번호가 일치하지 않습니다");
     return;
   }
 
