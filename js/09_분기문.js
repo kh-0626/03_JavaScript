@@ -175,18 +175,18 @@ function startGame(){
       count++; // 정상 입력 시 카운트 증가
 
       if(value === answer){
-        alert("정답!!!");
+        alert(`정답!!! ${answer} / 시도 횟수 : ${count}`);
         break;
       }
       if(7 < count){
-        alert("7회 초과로 실패!");
+        alert(`7회 초과로 실패! (정답:${answer})`);
         break;
       }
       if(value > answer){
-        alert("DOWN");
+        alert(`DOWN (현재 ${count})회`);
       }
       if(value < answer){
-        alert("UP");
+        alert(`UP (현재 ${count})회`);
       }
 
   } // while end
