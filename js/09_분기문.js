@@ -155,7 +155,7 @@ function startGame(){
       // - 취소를 클릭한 경우 
       if(input === null){
         alert(`${count}번째에서 포기 하셨습니다(정답:${answer})`)
-        continue;
+        break;
       } 
     
       // - 미입력한 경우 (카운트 증가 X)
@@ -174,8 +174,21 @@ function startGame(){
 
       count++; // 정상 입력 시 카운트 증가
 
-      // UP / DOWN / 정답 판별
-      
+      if(value === answer){
+        alert("정답!!!");
+        break;
+      }
+      if(7 < count){
+        alert("7회 초과로 실패!");
+        break;
+      }
+      if(value > answer){
+        alert("DOWN");
+      }
+      if(value < answer){
+        alert("UP");
+      }
+
   } // while end
 
   // 함수 끝 종료
