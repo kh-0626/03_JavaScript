@@ -208,9 +208,64 @@ function createLottoNumber(){
   for(let i=0 ; i<arr.length ; i++){
     lotto.innerHTML += `<div>${arr[i]}</div>`;
   }
-
-
-
 }
 
+/* 2차원 배열 확인 1 */
+function check6(){
 
+  // 변수 선언
+  const num1 = 10;
+  const num2 = 20;
+  const num3 = 30;
+
+  // 1차원 배열 선언
+  const arr1 = [num1, num2, num3]; // [10,20,30]
+  const arr2 = [40, 50, 60]; 
+  const arr3 = [70, 80, 90];
+  
+  // 2차원 배열 선언
+  const dArr1 = [
+      [10, 20, 30],
+      [40, 50, 60],
+      [70, 80, 90]
+    ];
+
+  const dArr2 = [arr1, arr2, arr3]; // 1차원 배열 묶음
+
+  console.log("dArr1 : ", dArr1);
+  console.log("dArr2 : ", dArr2);
+
+  //-----------------------------------
+
+// 2차원 배열에 인덱스를 이용해서 접근하기
+
+  console.log("dArr2[0] : ", dArr2[0]);
+  console.log("dArr2[0].length : ", dArr2[0].length);
+
+  console.log("dArr2[1] : ", dArr2[1]);
+  console.log("dArr2[1].length : ", dArr2[1].length);
+
+  console.log("dArr2[2] : ", dArr2[2]);
+  console.log("dArr2[2].length : ", dArr2[2].length);
+
+  // 2차원 배열 내에 저장된 1차원 배열 요소의 개수
+  console.log("dArr2.length : ", dArr2.length); // 3
+
+  // dArr2의 0행 2열에 저장된 값 얻어오기
+  console.log("dArr2[0][2] : ", dArr2[0][2]); // 30
+  
+  // dArr2의 1행 1열에 저장된 값 얻어오기
+  console.log("dArr2[1][1] : ", dArr2[1][1]); // 30
+
+  // dArr2의 2행 0열에 저장된 값 얻어오기
+  console.log("dArr2[2][0] : ", dArr2[2][0]); // 30
+
+  /* 2차원 배열 인덱스를 이용해서 값 대입 */
+
+  // 0행 0열, 1행 0열, 2행 0열 값을 * 10 해서 대입
+  dArr2[0][0] = dArr2[0][0] * 10;
+  dArr2[1][0] *= 10; // 복합 대입 연산자
+  dArr2[2][0] *= 10; // 복합 대입 연산자
+
+  console.log(dArr2); // 확인
+}
