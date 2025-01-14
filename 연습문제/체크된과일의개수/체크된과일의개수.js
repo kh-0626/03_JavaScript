@@ -1,11 +1,11 @@
-const apple       = document.querySelector("#apple")
-const banana      = document.querySelector("#banana")
-const melon       = document.querySelector("#melon")
-const applecount  = document.querySelector("#applecount")
-const bananacount = document.querySelector("#bananacount")
-const meloncount  = document.querySelector("#meloncount")
-const reslut      = document.querySelector("#result")
-const btn         = document.querySelector("#btn")
+const apple       = document.querySelector("#apple");
+const banana      = document.querySelector("#banana");
+const melon       = document.querySelector("#melon");
+const applecount  = document.querySelector("#applecount");
+const bananacount = document.querySelector("#bananacount");
+const meloncount  = document.querySelector("#meloncount");
+const reslut      = document.querySelector("#result");
+const btn         = document.querySelector("#btn"); // 버튼
 
 btn.addEventListener("click", (e)=>{
   let str="";
