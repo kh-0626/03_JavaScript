@@ -1,0 +1,108 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.abc{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.container{
+  width: 350px;
+  height: 200px;
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.number{
+  width: 33.33%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;     
+  user-select: none;    /* 블럭 막기 */
+}
+
+.number{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+  
+  border-radius: 10px;
+
+  color: black;
+  font-weight: bold;
+  font-family: "고딕";
+
+  cursor: pointer; /* 포인터 손가락 모양 */
+  user-select: none; /* 선택(블럭) 불가 */
+}
+
+.number:hover{ /* 마우스 올렸을 때 */
+  color: black;
+  background-color: rgb(190, 166, 166);
+}
+
+.number:active{ /* 클릭하고 있을 때 */
+  scale: 1.15; /* 크기 변경 */
+  background-color: gray;
+}
+
+/* ------------------------------- */
+
+#chu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+  border: 2px solid green;
+  border-radius: 10px;
+
+  color: green;
+  font-weight: bold;
+  font-family: "고딕";
+
+  cursor: pointer; /* 포인터 손가락 모양 */
+  user-select: none; /* 선택(블럭) 불가 */
+}
+
+#chu:hover{ /* 마우스 올렸을 때 */
+  color: white;
+  background-color: green;
+}
+
+#chu:active{ /* 클릭하고 있을 때 */
+  scale: 1; /* 크기 변경 */
+}
+
+#reset{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+  border: 2px solid gray;
+  border-radius: 10px;
+
+  color: gray;
+  font-weight: bold;
+  font-family: "고딕";
+
+  cursor: pointer; /* 포인터 손가락 모양 */
+  user-select: none; /* 선택(블럭) 불가 */
+}
+
+#reset:hover{ /* 마우스 올렸을 때 */
+  color: white;
+  background-color: gray;
+}
+
+#reset:active{ /* 클릭하고 있을 때 */
+  scale: 1; /* 크기 변경 */
+}
