@@ -14,6 +14,50 @@
     <button id="random">랜덤 선택</button>
   </div>
   <div id="lottoBoard"></div>
+  <!-- 결과 확인 영역 추가 -->
+<div id="resultArea" class="hidden">
+  <h3>당첨 번호 입력 (쉼표로 구분)</h3>
+  <input type="text" id="winNumbers" placeholder="예: 1,2,3,4,5,6">
+  <input type="text" id="bonusNumber" placeholder="보너스 번호">
+  <button id="checkResult">결과 확인</button>
+  <p id="resultText"></p>
+</div>
+<table id="rankingTable">
+  <thead>
+    <tr>
+      <th>조건</th>
+      <th>등수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6개 모두 일치</td>
+      <td>1등</td>
+    </tr>
+    <tr>
+      <td>5개 일치 + 보너스 번호 일치</td>
+      <td>2등</td>
+    </tr>
+    <tr>
+      <td>5개 일치</td>
+      <td>3등</td>
+    </tr>
+    <tr>
+      <td>4개 일치</td>
+      <td>4등</td>
+    </tr>
+    <tr>
+      <td>3개 일치</td>
+      <td>5등</td>
+    </tr>
+    <tr>
+      <td>그 외</td>
+      <td>꽝</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
   <script src="./로또판생성기.js"></script>
 </html>
